@@ -1,9 +1,12 @@
-name = "Ayesha Ahmad"
-age = 18
-Course = "BS software engineering"
-
-Student_info = {f"my name is:  {name} \nand my age is:  {age} and course is:  {Course}"}
-
-print(Student_info)
-
-print(f"The lenght of username is {len(name)}")
+try:
+    for i in range(1 , 6):
+        num = int(input("Enter the numbers"))
+        if(num < 0):
+            raise ValueError("Number cannot be negative")
+        print(num)
+    else:
+        print("All number processed successfully ")
+except ValueError as e:
+   print(e)
+finally: 
+   print("Itration completed")
